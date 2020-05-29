@@ -1,0 +1,8 @@
+salary = int(input('Заработная плата в месяц: '))
+ipoteka = int(input('Сколько процентов от ЗП уходит на ипотеку: '))
+life = int(input('Сколько процентов от ЗП уходит на жизнь: '))
+premiy = int(input('Сколько раз приходит премия в год: '))
+wasted = str(round((((salary*ipoteka)/100)*12),0))
+balance = str(round((salary*12 + (salary*premiy)/2 - ((salary*ipoteka)/100)*12 - ((salary*life)/100)*12),0))
+print ('На ипотеку было потрачено: ' + wasted + ' рублей')
+print ('Было накоплено: ' + balance + ' рублей')
